@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <nav class="main-navigation">
         <a class="logo" alt="логотип">
           <img src="img/index-logo.png" width=""height="" alt="Логотип Седоны">
@@ -28,7 +28,7 @@
       </nav>
     </header>
 
-    <main>      
+    <main class="page-content">      
       <h1 class="visually-hidden">Седона</h1>
       <section class="intro">
         <h2 class="visually-hidden">Добро пожаловать</h2>      
@@ -41,9 +41,11 @@
           <p class="introduce font-grey">рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           <ol class="features-list">
             <li class="back-blue">
-              <h3 class="font-white">Настоящий городок</h3>
-              <p class="font-white">Седона не аттракцион для туристов, там течет своя жизнь</p>
-              <!-- Фото <img class="features1" src="" width=""height="" alt="">-->
+              
+                  <h3 class="font-white">Настоящий городок</h3>
+                  <p class="font-white">Седона не аттракцион для туристов, там течет своя жизнь</p>
+                  <!-- Фото <img class="features1" src="" width=""height="" alt="">-->
+            
               <ul class="about-sity">
                   <li>
                       <h3 class="font-black">Жилье</h3>
@@ -84,37 +86,38 @@
       <section class="search-hotel">
           <h2 class="font-black">Заинтересовались?</h2>
           <p class="font-grey">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <p class="search-hotel-link">Поиск гостиницы в Седоне</p>  
+          <a href=form.html class="search-hotel-link">Поиск гостиницы в Седоне</a>  
           <!-- должно всплывать окно-->      
       </section>
       <section class="map">
+          <h2 class="visually-hidden">карта</h2>
         <!--Тут будет картинка, а потом карта-->
       </section>
-      <section class="popup search">
+      <div class="popup search">
         <!-- Тут будет форма-->
-      </section>
+      </div>
     </main>
 
-    <footer>
-        <h3 class="font-black">#VisitSedona</h3>
-        <div>
+    <footer class="page-footer">
+        <div>#VisitSedona</div>         
           <ul class="social">
             <li>
-              <a class="social-network" href="#" alt="Твиттер">Твиттер</a>
+              <a class="social-network tw" href="#" alt="Твиттер">Твиттер</a>
             </li>
             <li>
-              <a class="social-network" href="#" alt="Фейсбук">Фейсбук</a>
+              <a class="social-network fb" href="#" alt="Фейсбук">Фейсбук</a>
             </li>
             <li>
-              <a class="social-network" href="#" alt="Ю-туб">Ю-туб</a>
+              <a class="social-network yt" href="#" alt="Ю-туб">Ю-туб</a>
             </li>
-          </ul>
-        </div>
-        <div>
-          <p>website by</p>
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
+          </ul>        
+        <div class="copyright">
+          <span>
+            website by                   
+           <a href="https://htmlacademy.ru/intensive/htmlcss">
             <!--Логотип академии <img src="#" alt="htmlacademy">-->
-          </a>
+           </a>
+           </span>           
         </div>
       
     </footer>
