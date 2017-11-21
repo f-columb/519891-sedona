@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header>
+    <header class="page-header">
       <nav class="main-navigation">
         <a class="logo" href="index.html" alt="логотип">
           <img src="img/index-logo.png" width=""height="" alt="Логотип Седоны">
@@ -28,7 +28,7 @@
       </nav>
     </header>
 
-    <main>  
+    <main class="page-content">  
         <h1 class="visually-hidden">Выбор гостиницы</h1>  
       <section class="filter">
         <!--Тут будет три формы
@@ -37,50 +37,61 @@
           форма Стоимость -->
       </section>
       <section class="search-resalt">
-        <h2 class="visually-hidden">Результат поиска</h2>
-        <h3 class="count font-black">Найдено: 3</h3>
-        <p class="sort font-black">сортировка</p>
-        <ul class="sorting-method">        
-          <li>
+        <!--не надо ли весь этот блок в div завернуть? или это лишнее? -->
+        <div class="search-total">
+         <h2 class="visually-hidden">Результат поиска</h2>
+         <h3 class="count font-black">Найдено: 3</h3>
+         <p class="sort font-black">сортировка</p>
+         <ul class="sorting-method">        
+           <li>
             <span>по цене</span>
-          </li>
-          <li>
+           </li>
+           <li>
               <span>по типу</span>
             </li>
             <li>
                 <span>по рейтингу</span>
               </li>
-        </ul>
-        <!-- Тут должны быть стрелки
-          <img src="" width=""height="" alt="сортировать по возрастанию">
-          <img src="" width=""height="" alt="сортировать по убыванию">
-        -->      
+         </ul>
+          <div>
+            <a href="#" class="arrow-up">
+              <img src="" width=""height="" alt="сортировать по возрастанию">
+            </a>
+            <a href="#" class="arrow-down">
+              <img src="" width=""height="" alt="сортировать по убыванию">
+            </a>  
+          </div>
+        </div>       
+          
         <ul class="search-resalt-list">
           <li class="search-resalt-item">
-            <h3 class="hotel-name font-black">Amara resort & spa</h3>
             <!--<img src="" width=""height="" alt="фотография гостиницы"-->
-            <table>
-              <tr>
-                <td class=hotel-type"">гостиница</td>
-                <td class="price">от 4000 р.</td>
-              </tr>
-              <tr>
+            <div class="resalt-item-info">
+              <h3 class="hotel-name font-black">Amara resort & spa</h3>            
+              <table>
+                <tr>
+                  <td class=hotel-type"">гостиница</td>
+                  <td class="price">от 4000 р.</td>
+                </tr>
+                <tr>
                   <td class="details">
                     <a href="#">подробнее</a>
                   </td>
                   <td class="booking">
-                      <a href="#">забронировать</a>
+                    <a href="#">забронировать</a>
                   </td>
                 </tr>
-            </table>
-            <span>
+              </table>
+            </div>
+            <div class="rating">
               <!--<img src="" width=""height="" alt="звезды"-->
-            </span>
-            <b class="rating">рейтинг:8,5</b>
+              <b class="rating">рейтинг:8,5</b>
+            </div>  
           </li>        
           <li class="search-resalt-item">
-              <h3 class="hotel-name font-black">Desert quail inn</h3>
-              <!--<img src="" width=""height="" alt="фотография гостиницы"-->
+            <!--<img src="" width=""height="" alt="фотография гостиницы"-->
+            <div class="resalt-item-info">
+              <h3 class="hotel-name font-black">Desert quail inn</h3>            
               <table>
                 <tr>
                   <td class=hotel-type"">мотель</td>
@@ -95,15 +106,17 @@
                     </td>
                   </tr>
               </table>
-              <span>
-                <!--<img src="" width=""height="" alt="звезды"-->
-              </span>
-              <b class="rating">рейтинг:8,9</b>
-            </li>            
-            <li class="search-resalt-item">
-                <h3 class="hotel-name font-black">villas at poco diablo</h3>
-                <!--<img src="" width=""height="" alt="фотография гостиницы"-->
-                <table>
+            </div>
+            <div class="rating">
+              <!--<img src="" width=""height="" alt="звезды"-->
+              <b class="rating">рейтинг:8,5</b>
+            </div>
+          </li>            
+          <li class="search-resalt-item">
+            <!--<img src="" width=""height="" alt="фотография гостиницы"-->
+            <div class="resalt-item-info">
+              <h3 class="hotel-name font-black">villas at poco diablo</h3>                
+              <table>
                   <tr>
                     <td class=hotel-type"">апартаменты</td>
                     <td class="price">от 2000 р.</td>
@@ -117,36 +130,37 @@
                       </td>
                     </tr>
                 </table>
-                <span>
+              </div>
+              <div class="rating">
                   <!--<img src="" width=""height="" alt="звезды"-->
-                </span>
-                <b class="rating">рейтинг:9,2</b>
-              </li>              
+                  <b class="rating">рейтинг:8,5</b>
+              </div>
+            </li>              
         </ul>
       </section>
 
     </main>
 
-    <footer>
-      <div>#VisitSedona</div>               
+    <footer class="page-footer">
+        <div>#VisitSedona</div>         
           <ul class="social">
             <li>
-              <a class="social-network tw" href="#" alt="Твиттер">Твиттер</a>
+              <a class="social-item tw" href="#" alt="Твиттер">Твиттер</a>
             </li>
             <li>
-              <a class="social-network fb" href="#" alt="Фейсбук">Фейсбук</a>
+              <a class="social-item fb" href="#" alt="Фейсбук">Фейсбук</a>
             </li>
             <li>
-              <a class="social-network yt" href="#" alt="Ю-туб">Ю-туб</a>
+              <a class="social-item yt" href="#" alt="Ю-туб">Ю-туб</a>
             </li>
           </ul>        
         <div class="copyright">
           <span>
-            website by
-          </span>          
+            website by                   
            <a href="https://htmlacademy.ru/intensive/htmlcss">
             <!--Логотип академии <img src="#" alt="htmlacademy">-->
-           </a>          
+           </a>
+           </span>           
         </div>
       
     </footer>
