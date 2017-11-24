@@ -1,0 +1,47 @@
+.page-frame {
+    width: 1200px;
+}
+.intro {
+    width: 1200px;
+    height: 780px;
+    background: rgb(255, 255, 255);
+    background-image: url( "s:/!!!HTML/sedona/519891-sedona/img/intro_background.jpg" );
+}
+.feature-wide-box1 {
+    width: 1200px;
+    height: 256px;
+    background: rgb(129, 179, 210);
+    background-image: url( "s:/!!!HTML/sedona/519891-sedona/img/foto1.jpg" );
+    background-repeat: no-repeat;
+    background-position: right 0px top 0px;
+}
+.feature-wide-box2 {
+    width: 1200px;
+    height: 256px;
+    background: rgb(129, 179, 210);
+    background-image: url( "s:/!!!HTML/sedona/519891-sedona/img/foto2.jpg" );
+    background-repeat: no-repeat;
+    background-position: left 0px top 0px;
+}
+.about-sity {
+    list-style-type: none;
+}
+.about-sity li:first-child {
+    background-image: url( "s:/!!!HTML/sedona/519891-sedona/img/icon_1.svg" );
+    background-repeat: no-repeat;
+}
+.about-sity li:nth-child(2) {
+    background-image: url( "s:/!!!HTML/sedona/519891-sedona/img/icon_2.svg" );
+    background-repeat: no-repeat; 
+}
+.about-sity li:last-child {
+    background-image: url( "s:/!!!HTML/sedona/519891-sedona/img/icon_3.svg" );
+    background-repeat: no-repeat;
+}
+.social {
+    list-style-type: none;
+}
+.social-item {
+    background: rgb(129, 179, 210);
+    border: 13px solid rgb(129, 179, 210);
+}

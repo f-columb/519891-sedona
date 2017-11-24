@@ -2,124 +2,102 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="s:\!!!HTML\sedona\519891-sedona\css\hotel_style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header class="page-header">
-      <nav class="main-navigation">
-        <a class="logo" href="index.html" alt="логотип">
-          <img src="img/index-logo.png" width=""height="" alt="Логотип Седоны">
-        </a>        
-        <ul class="site-navigation">
-          <li>
-            <a href="#">Информация</a>
-          </li>
-          <li>
-              <a href="#">Фото и видео</a>
-          </li>
-          <li>
-              <a href="#">Карта штата</a>
-          </li>
-          <li class="site-navigation-current">
-              <a href="#">Гостиницы</a>
-          </li>
-        </ul>
+    <div class="page-frame">
+      <header class="page-header">
+        <nav class="main-navigation">
+          <a class="logo" href="index.html" alt="логотип">
+            <img src="s:\!!!HTML\sedona\519891-sedona\img\logo.png" width="138"height="70" alt="Логотип Седоны">
+          </a>        
+          <ul class="site-navigation">
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+                <a href="#">Фото и видео</a>
+            </li>
+            <li>
+                <a href="#">Карта штата</a>
+            </li>
+            <li class="site-navigation-current">
+                <a href="#">Гостиницы</a>
+            </li>
+          </ul>
         
-      </nav>
-    </header>
+        </nav>
+      </header>
 
-    <main class="page-content">  
+      <main class="page-content">  
         <h1 class="visually-hidden">Выбор гостиницы</h1>  
-      <section class="filter">
-        <!--Тут будет три формы
+        <section class="filter">
+         <!--Тут будет три формы
           форма Инфраструктура
           форма Тип жилья
           форма Стоимость -->
-      </section>
-      <section class="search-resalt">
-        <!--не надо ли весь этот блок в div завернуть? или это лишнее? -->
-        <div class="search-total">
-         <h2 class="visually-hidden">Результат поиска</h2>
-         <h3 class="count font-black">Найдено: 3</h3>
-         <p class="sort font-black">сортировка</p>
-         <ul class="sorting-method">        
-           <li>
-            <span>по цене</span>
-           </li>
-           <li>
-              <span>по типу</span>
-            </li>
-            <li>
-                <span>по рейтингу</span>
+        </section>
+        <section class="search-resalt">
+          <!--не надо ли весь этот блок в div завернуть? или это лишнее? -->
+          <div class="search-total">
+            <h2 class="visually-hidden">Результат поиска</h2>
+            <h3 class="count font-black">Найдено: 3</h3>
+            <p class="sort font-black">сортировка</p>
+            <ul class="sorting-method">        
+              <li>
+               <span>по цене</span>
               </li>
-         </ul>
-          <div>
-            <a href="#" class="arrow-up">
-              <img src="" width=""height="" alt="сортировать по возрастанию">
-            </a>
-            <a href="#" class="arrow-down">
-              <img src="" width=""height="" alt="сортировать по убыванию">
-            </a>  
-          </div>
-        </div>       
-          
-        <ul class="search-resalt-list">
-          <li class="search-resalt-item">
-            <!--<img src="" width=""height="" alt="фотография гостиницы"-->
-            <div class="resalt-item-info">
-              <h3 class="hotel-name font-black">Amara resort & spa</h3>            
-              <table>
-                <tr>
-                  <td class=hotel-type"">гостиница</td>
-                  <td class="price">от 4000 р.</td>
-                </tr>
-                <tr>
-                  <td class="details">
-                    <a href="#">подробнее</a>
-                  </td>
-                  <td class="booking">
-                    <a href="#">забронировать</a>
-                  </td>
-                </tr>
-              </table>
+              <li>
+                <span>по типу</span>
+              </li>
+              <li>
+                  <span>по рейтингу</span>
+              </li>
+            </ul>
+            <div>
+              <a href="#" class="arrow-up">
+                <img src="s:\!!!HTML\sedona\519891-sedona\img\icon_up_dir.svg" width="11"height="10" alt="сортировать по возрастанию">
+              </a>
+              <a href="#" class="arrow-down">
+                <img src="s:\!!!HTML\sedona\519891-sedona\img\icon_down_dir.svg" width="11"height="10" alt="сортировать по убыванию">
+              </a>  
             </div>
-            <div class="rating">
-              <!--<img src="" width=""height="" alt="звезды"-->
-              <b class="rating">рейтинг:8,5</b>
-            </div>  
-          </li>        
-          <li class="search-resalt-item">
-            <!--<img src="" width=""height="" alt="фотография гостиницы"-->
-            <div class="resalt-item-info">
-              <h3 class="hotel-name font-black">Desert quail inn</h3>            
-              <table>
-                <tr>
-                  <td class=hotel-type"">мотель</td>
-                  <td class="price">от 3000 р.</td>
-                </tr>
-                <tr>
+          </div>       
+          
+          <ul class="search-resalt-list">
+            <li class="search-resalt-item">
+              <img src="s:\!!!HTML\sedona\519891-sedona\img\Amara_Resort.jpg" width=""height="" alt="фотография гостиницы">
+              <div class="resalt-item-info">
+                <h3 class="hotel-name font-black">Amara resort & spa</h3>            
+                <table>
+                  <tr>
+                    <td class=hotel-type"">гостиница</td>
+                    <td class="price">от 4000 р.</td>
+                  </tr>
+                  <tr>
                     <td class="details">
                       <a href="#">подробнее</a>
                     </td>
                     <td class="booking">
-                        <a href="#">забронировать</a>
+                      <a href="#">забронировать</a>
                     </td>
                   </tr>
-              </table>
-            </div>
-            <div class="rating">
-              <!--<img src="" width=""height="" alt="звезды"-->
-              <b class="rating">рейтинг:8,5</b>
-            </div>
-          </li>            
-          <li class="search-resalt-item">
-            <!--<img src="" width=""height="" alt="фотография гостиницы"-->
-            <div class="resalt-item-info">
-              <h3 class="hotel-name font-black">villas at poco diablo</h3>                
-              <table>
+                </table>
+              </div>
+              <div class="rating">
+                <!--<img src="" width=""height="" alt="звезды"-->
+                <b class="rating">рейтинг:8,5</b>
+              </div>  
+            </li>        
+            <li class="search-resalt-item">
+              <img src="s:\!!!HTML\sedona\519891-sedona\img\Desert_Quail.jpg" width=""height="" alt="фотография гостиницы">
+              <div class="resalt-item-info">
+                <h3 class="hotel-name font-black">Desert quail inn</h3>            
+                <table>
                   <tr>
-                    <td class=hotel-type"">апартаменты</td>
-                    <td class="price">от 2000 р.</td>
+                    <td class=hotel-type"">мотель</td>
+                    <td class="price">от 3000 р.</td>
                   </tr>
                   <tr>
                       <td class="details">
@@ -132,38 +110,66 @@
                 </table>
               </div>
               <div class="rating">
-                  <!--<img src="" width=""height="" alt="звезды"-->
-                  <b class="rating">рейтинг:8,5</b>
+                <!--<img src="" width=""height="" alt="звезды"-->
+                <b class="rating">рейтинг:8,5</b>
               </div>
-            </li>              
-        </ul>
-      </section>
+            </li>            
+            <li class="search-resalt-item">
+              <img src="s:\!!!HTML\sedona\519891-sedona\img\Villas_at_Poco_Diablo.jpg" width=""height="" alt="фотография гостиницы">
+              <div class="resalt-item-info">
+                <h3 class="hotel-name font-black">villas at poco diablo</h3>                
+                <table>
+                    <tr>
+                      <td class=hotel-type"">апартаменты</td>
+                      <td class="price">от 2000 р.</td>
+                    </tr>
+                    <tr>
+                        <td class="details">
+                          <a href="#">подробнее</a>
+                        </td>
+                        <td class="booking">
+                            <a href="#">забронировать</a>
+                        </td>
+                      </tr>
+                  </table>
+                </div>
+                <div class="rating">
+                    <!--<img src="" width=""height="" alt="звезды"-->
+                    <b class="rating">рейтинг:8,5</b>
+                </div>
+              </li>              
+          </ul>
+        </section>
 
-    </main>
-
-    <footer class="page-footer">
-        <div>#VisitSedona</div>         
+      </main>
+      <footer class="page-footer">
+          <div>#VisitSedona</div>         
           <ul class="social">
             <li>
-              <a class="social-item tw" href="#" alt="Твиттер">Твиттер</a>
+              <a class="social-item tw" href="#">
+                <img src="s:\!!!HTML\sedona\519891-sedona\img\twitter.svg" alt="Твиттер">
+              </a>
             </li>
             <li>
-              <a class="social-item fb" href="#" alt="Фейсбук">Фейсбук</a>
+              <a class="social-item fb" href="#">
+                <img src="s:\!!!HTML\sedona\519891-sedona\img\fb.svg" alt="Фейсбук">
+              </a>
             </li>
             <li>
-              <a class="social-item yt" href="#" alt="Ю-туб">Ю-туб</a>
+              <a class="social-item yt" href="#">
+                <img src="s:\!!!HTML\sedona\519891-sedona\img\youtube.svg" alt="Ю-туб">
+               </a>
             </li>
           </ul>        
-        <div class="copyright">
-          <span>
-            website by                   
-           <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <!--Логотип академии <img src="#" alt="htmlacademy">-->
-           </a>
-           </span>           
-        </div>
-      
-    </footer>
-
+          <div class="copyright">
+            <span>
+              website by                   
+                <a href="https://htmlacademy.ru/intensive/htmlcss">
+                 <img src="s:\!!!HTML\sedona\519891-sedona\img\logo_htmlacademy.svg" width="115px" height="41px" alt="htmlacademy">
+                </a>
+            </span>           
+          </div>      
+      </footer>
+    </div>
   </body>
 </html>
