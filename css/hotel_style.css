@@ -1,14 +1,14 @@
 .filter{
     width: 1200px;
     height: 217px;
-    background: rgb(255, 255, 255);
-    background-image: url( "s:/!!!HTML/sedona/519891-sedona/img/filter_background.jpg" );
+    background: #ffffff;
+    background-image: url( "../img/filter_background.jpg" );
 }
 
 .social {
     list-style-type: none;
 }
 .social-item {
-    background: rgb(129, 179, 210);
-    border: 13px solid rgb(129, 179, 210);
+    background: #81b3d2;
+    border: 13px solid #81b3d2;
 }
