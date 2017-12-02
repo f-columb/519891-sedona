@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css\index_style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -10,7 +10,7 @@
       <header class="page-header">
         <nav class="main-navigation">
           <a class="logo" alt="логотип">
-            <img src="img\logo.png" width="138"height="70" alt="Логотип Седоны">
+            <img src="img/logo.png" width="138"height="70" alt="Логотип Седоны">
           </a>        
           <ul class="site-navigation">
             <li>
@@ -90,13 +90,29 @@
           <p class="search-hotel-date font-grey">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a href="form.html" class="search-hotel-link">Поиск гостиницы в Седоне</a>  
           <!-- должно всплывать окно--> 
-          <div class="popup search">
-           <!-- Тут будет форма-->
+          <div class="popup-search">
+            <form class="popup-search-options" action="https://echo.htmlacademy.ru" method="post">
+              <p class="visit-date">
+                <label for="arrival-date">Дата заезда</label>
+                <input type="text" name="date" id="arrival-date"value="24 апреля 2017">
+              </p>
+              <p class="visit-date">
+                <label for="departure-date">Дата выезда</label>
+                <input type="text" name="date" id="departure-date" value="4 июля 2017">
+              </p>
+              <p>
+                <label for="adult">Взрослые</label>
+                <input class="count-guests" type="number" name="count-adult" id="adult" value="2">
+                <label for="children">Дети</label>
+                <input class="count-guests" type="number" name="count-children" id="children" value="0">
+              </p>
+            </form>
+            <a href="hotel.html" class="popup-search-hotels">Найти</a>
           </div>     
         </section>
         <section class="map">
           <h2 class="visually-hidden">карта</h2>
-          <img src="img\map.jpg " width="1200px" height="593px">
+          <img src="img/map.jpg " width="1200px" height="593px">
         </section>
       
       </main>
@@ -105,17 +121,17 @@
         <ul class="social">
           <li>
             <a class="social-item tw" href="#">
-              <img src="img\twitter.svg" alt="Твиттер">
+              <img src="img/twitter.svg" alt="Твиттер">
             </a>
           </li>
           <li>
             <a class="social-item fb" href="#">
-              <img src="img\fb.svg" alt="Фейсбук">
+              <img src="img/fb.svg" alt="Фейсбук">
             </a>
           </li>
           <li>
             <a class="social-item yt" href="#">
-              <img src="img\youtube.svg" alt="Ю-туб">
+              <img src="img/youtube.svg" alt="Ю-туб">
              </a>
           </li>
         </ul>        
@@ -123,7 +139,7 @@
           <span>
             website by                   
               <a href="https://htmlacademy.ru/intensive/htmlcss">
-               <img src="img\logo_htmlacademy.svg" width="115px" height="41px" alt="htmlacademy">
+               <img src="img/logo_htmlacademy.svg" width="115px" height="41px" alt="htmlacademy">
               </a>
           </span>           
         </div>      

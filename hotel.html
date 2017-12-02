@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css\hotel_style.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -10,7 +10,7 @@
       <header class="page-header">
         <nav class="main-navigation">
           <a class="logo" href="index.html" alt="логотип">
-            <img src="img\logo.png" width="138"height="70" alt="Логотип Седоны">
+            <img src="img/logo.png" width="138"height="70" alt="Логотип Седоны">
           </a>        
           <ul class="site-navigation">
             <li>
@@ -33,10 +33,52 @@
       <main class="page-content">  
         <h1 class="visually-hidden">Выбор гостиницы</h1>  
         <section class="filter">
-         <!--Тут будет три формы
-          форма Инфраструктура
-          форма Тип жилья
-          форма Стоимость -->
+         <form class="additional-criteria" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend>Инфраструктура</legend>
+            <p>
+              <input type="checkbox" name="pool" id="pool"checked>            
+              <label for="pool">Бассейн</label>
+            </p>
+            <p>
+              <input type="checkbox" name="parking" id="parking">
+              <label for="parking">Парковка</label>              
+            </p>
+            <p>
+              <input type="checkbox" name="wi-fi" id="wi-fi">
+             <label for="wi-fi">WI-FI</label>
+            </p>
+          </fieldset>
+          <fieldset>
+              <legend>Тип жилья</legend>
+              <p>
+                <input type="checkbox" name="hotel" id="hotel"checked>            
+                <label for="hotel">Гостиница</label>
+              </p>
+              <p>
+                <input type="checkbox" name="motel" id="motel"checked>
+                <label for="motel">Мотель</label>              
+              </p>
+              <p>
+                <input type="checkbox" name="apartments" id="apartments"checked>
+               <label for="apartments">Апартаменты</label>
+              </p>
+            </fieldset>
+            <div class="price-range">
+                <div class="price-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                  <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
+         </form>
         </section>
         <section class="search-resalt">
           <!--не надо ли весь этот блок в div завернуть? или это лишнее? -->
@@ -57,17 +99,17 @@
             </ul>
             <div>
               <a href="#" class="arrow-up">
-                <img src="img\icon_up_dir.svg" width="11"height="10" alt="сортировать по возрастанию">
+                <img src="img/icon_up_dir.svg" width="11"height="10" alt="сортировать по возрастанию">
               </a>
               <a href="#" class="arrow-down">
-                <img src="img\icon_down_dir.svg" width="11"height="10" alt="сортировать по убыванию">
+                <img src="img/icon_down_dir.svg" width="11"height="10" alt="сортировать по убыванию">
               </a>  
             </div>
           </div>       
           
           <ul class="search-resalt-list">
             <li class="search-resalt-item">
-              <img src="img\Amara_Resort.jpg" width=""height="" alt="фотография гостиницы">
+              <img src="img/Amara_Resort.jpg" width=""height="" alt="фотография гостиницы">
               <div class="resalt-item-info">
                 <h3 class="hotel-name font-black">Amara resort & spa</h3>            
                 <table>
@@ -91,7 +133,7 @@
               </div>  
             </li>        
             <li class="search-resalt-item">
-              <img src="img\Desert_Quail.jpg" width=""height="" alt="фотография гостиницы">
+              <img src="img/Desert_Quail.jpg" width=""height="" alt="фотография гостиницы">
               <div class="resalt-item-info">
                 <h3 class="hotel-name font-black">Desert quail inn</h3>            
                 <table>
@@ -115,7 +157,7 @@
               </div>
             </li>            
             <li class="search-resalt-item">
-              <img src="img\Villas_at_Poco_Diablo.jpg" width=""height="" alt="фотография гостиницы">
+              <img src="img/Villas_at_Poco_Diablo.jpg" width=""height="" alt="фотография гостиницы">
               <div class="resalt-item-info">
                 <h3 class="hotel-name font-black">villas at poco diablo</h3>                
                 <table>
@@ -147,17 +189,17 @@
           <ul class="social">
             <li>
               <a class="social-item tw" href="#">
-                <img src="img\twitter.svg" alt="Твиттер">
+                <img src="img/twitter.svg" alt="Твиттер">
               </a>
             </li>
             <li>
               <a class="social-item fb" href="#">
-                <img src="img\fb.svg" alt="Фейсбук">
+                <img src="img/fb.svg" alt="Фейсбук">
               </a>
             </li>
             <li>
               <a class="social-item yt" href="#">
-                <img src="img\youtube.svg" alt="Ю-туб">
+                <img src="img/youtube.svg" alt="Ю-туб">
                </a>
             </li>
           </ul>        
@@ -165,7 +207,7 @@
             <span>
               website by                   
                 <a href="https://htmlacademy.ru/intensive/htmlcss">
-                 <img src="img\logo_htmlacademy.svg" width="115px" height="41px" alt="htmlacademy">
+                 <img src="img/logo_htmlacademy.svg" width="115px" height="41px" alt="htmlacademy">
                 </a>
             </span>           
           </div>      
