@@ -1,29 +1,92 @@
+body{
+    margin:  0;
+    padding: 0;
+
+    font-family: "PT+Sans", Arial, sans-serif;
+    text-transform: uppercase;
+
+    background-color: #ffffff;
+}
 .page-frame {
     width: 1200px;
     margin: 0px auto;
 }
+a {
+    text-decoration: none;
+  }
+.main-navigation{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #000000;  
+    background-color: #FFFFFF;
+}  
+.site-navigation a {
+    color: #000000;
+}
+.logo{
+    /* как его поставить на место*/
+}
+.site-navigation,
+.social{
+    list-style: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
 .intro {
     width: 1200px;
-    height: 780px;
-    background: #ffffff;
+    height: 508px;
+    background: #90bed8;
     background-image: url( "../img/intro_background.jpg" );
 }
-.feature-wide-box1 {
+.features,
+.search-hotel
+ {
+    text-align: center;    
+}
+.features-list{
+    list-style: none;
+}
+.features h3{ 
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    color: #000000;
+}
+.features p{ 
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 26px;
+    color: #333333;
+}
+
+
+.feature-item-info {
     width: 1200px;
     height: 256px;
     background: #81b3d2;
-    background-image: url( "../img/foto1.jpg" );
-    background-repeat: no-repeat;
     background-position: right 0px top 0px;
+    
 }
-.feature-wide-box2 {
-    width: 1200px;
-    height: 256px;
-    background: #81b3d2;
-    background-image: url( "../img/foto2.jpg" );
-    background-repeat: no-repeat;
-    background-position: left 0px top 0px;
+
+.feature-wide h3,
+.feature-wide p, {
+    color: #c5c5c5;/*заменить на белый*/
 }
+.feature-normal{
+    background-color: #eeeeee;
+}
+
 .about-sity {
     list-style-type: none;
 }
