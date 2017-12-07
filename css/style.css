@@ -6,6 +6,8 @@ body{
     text-transform: uppercase;
 
     background-color: #ffffff;
+
+    box-sizing: border-box;
     
 }
 .page-frame {
@@ -104,6 +106,7 @@ a {
 
 .feature-normal{
     background-color: #eeeeee;
+    
 }
 
 
@@ -184,7 +187,7 @@ a {
     line-height: 18px;
     color: #c5c5c5;
     opacity:0.3;
-    border-bottom: 1px dashed #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
 }
 .sorting-method a:hover{
     color: #81b3d2;
@@ -272,5 +275,4 @@ a {
 .popup-search-options input:focus {
     background-color: #ffffff;
     border: 2px solid #e5e5e5; 
-    box-sizing: border-box;
 }
