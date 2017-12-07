@@ -22,7 +22,7 @@ a {
 }
 .main-navigation {
 
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 }  
 .site-navigation a {
     font-size: 14px;
@@ -41,10 +41,6 @@ a {
 .popup-search-hotels a:active {
     opacity: 0.3;  
 }   
-.site-navigation .active  {
-    color: #766357;  
-} 
-
 .logo{
     /* как его поставить на место*/
 }
@@ -53,7 +49,8 @@ a {
 .about-sity,
 .features-list,
 .sorting-method,
-.search-resalt-list {
+.search-resalt-list,
+.stars {
     list-style: none;
 }
 
@@ -103,7 +100,7 @@ a {
 }
 .features .feature-wide-info h3,
 .features .feature-wide-info p {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 .feature-normal{
     background-color: #eeeeee;
@@ -133,7 +130,7 @@ a {
 .popup-search-hotels {
     font-size: 21px;    
     line-height: 26px;
-    color: #FFFFFF;
+    color: #ffffff;
     display: block;
 }
 .search-hotel-link{
@@ -141,14 +138,14 @@ a {
     height: 86px;
     font-weight: normal;
     background-color: #766357;
-    padding-top: 32px;
+    line-height: 86px;
 }
 .popup-search-hotels{
     width: 458px;
     height: 58px;
     font-weight: bold;
     background-color: #81b3d2;
-    padding-top: 18px;
+    line-height: 58px;
 }
 .hash {
     font-size: 21px;
@@ -252,7 +249,7 @@ a {
 .arrow-down {
     fill: #cacaca;
 }
-.arrow-down .active{
+.arrow-down.active{
     fill: #81b3d2; 
 }
 .arrow-up:hover,
@@ -289,7 +286,7 @@ a {
     font-size: 14px;
     font-weight: bold;
     line-height: 21px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 .rating {
     font-size: 14px;
@@ -334,6 +331,10 @@ a {
 .search-hotel-link:active {
     background-color: #503e33;
 }
+.search-hotel-link:active {
+   color: rgba(255, 255, 255, 0.3)
+}
+
 .popup-search-options input {
     background-color: #f2f2f2;
     border: none;
@@ -342,6 +343,24 @@ a {
     background-color: #ebebeb; 
 }
 .popup-search-options input:focus {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     outline: 2px solid #e5e5e5; 
+}
+.popup-search-hotels:active{
+    color: rgba(255, 255, 255, 0.3);
+}
+.stars {
+    display: flex; 
+ }
+ .stars li:not(:last-child){
+     margin-right: 5px;  
+ }
+ .social svg{
+     margin: auto;
+    }
+.stars li{
+    width: 18px;
+    height: 17px;
+    background-image: url( "../img/star.svg" ); 
+    background-repeat: no-repeat;
 }
