@@ -29,6 +29,7 @@ a {
     font-weight: bold;
     line-height: 26px;
     color: #000000;
+    
 }
 .site-navigation a:hover{
     color: #81b3d2;  
@@ -36,14 +37,9 @@ a {
 .site-navigation a:active,
 .hotel-name a:active,
 .details a:active,
-.booking a:active,
-.search-hotel-link a:active,
-.popup-search-hotels a:active {
+.booking a:active {
     opacity: 0.3;  
 }   
-.logo{
-    /* как его поставить на место*/
-}
 .site-navigation,
 .social,
 .about-sity,
@@ -89,13 +85,14 @@ a {
     line-height: 26px;
     color: #333333;
 }
-
-
-.feature-wide-info {
+.feature-wide {
     width: 1200px;
     height: 256px;
+}
+
+.feature-wide-info {
     background: #81b3d2;
-    background-position: right 0px top 0px;
+    
     
 }
 .features .feature-wide-info h3,
@@ -103,20 +100,25 @@ a {
     color: #ffffff;
 }
 .feature-normal{
+    width: 400px;
+    height: 256px;
     background-color: #eeeeee;
     
 }
 .about-sity li:first-child {
     background-image: url( "../img/icon_1.svg" );
     background-repeat: no-repeat;
+   
 }
 .about-sity li:nth-child(2) {
     background-image: url( "../img/icon_2.svg" );
     background-repeat: no-repeat; 
+   
 }
 .about-sity li:last-child {
     background-image: url( "../img/icon_3.svg" );
     background-repeat: no-repeat;
+    
 }
 .popup-search,
 .popup-search input{
@@ -139,6 +141,7 @@ a {
     font-weight: normal;
     background-color: #766357;
     line-height: 86px;
+    
 }
 .popup-search-hotels{
     width: 458px;

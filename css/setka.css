@@ -1,0 +1,101 @@
+.page-header {
+    position: relative;
+}
+.site-navigation {
+    display: flex;
+    flex-basis: 100%;
+    height: 56px;
+    padding-left: 72px;
+    padding-right: 72px;
+    margin: 0px;
+    box-sizing: border-box;
+    border: 1px solid #FF0000;
+}
+.site-navigation li {
+    flex-basis: 240px;    
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}
+
+/*.site-navigation li:not(:last-child){
+    margin-right: 32px;  
+}*/
+.site-navigation li:nth-child(2){
+    margin-right: 96px;
+}
+.site-navigation li:first-child,
+.site-navigation li:nth-child(2) {
+    text-align: left;
+}
+.site-navigation li:last-child,
+.site-navigation li:nth-child(3) {
+    text-align: right
+}
+.logo {
+    display: block;
+    z-index: 2;
+    position: absolute;
+    margin: 0px 531px;
+}
+/*Преимущества Седоны*/
+
+.introduce-caption,
+.introduce-description,
+.features-list,
+.feature-item-caption,
+.number,
+.feature-item-description,
+.about-sity,
+.about-sity-caption,
+.about-sity-description,
+.feature-item {
+    margin: 0px;
+    padding: 0px;
+}
+.introduce {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: auto;
+    width: 600px;
+    height: 216px;
+    margin-left: 300px;
+}
+.introduce-caption {
+    margin-top: 61px;
+    margin-bottom: 27px;
+}
+.features-list {
+    display: flex;
+    flex-basis: 1200px;
+    flex-wrap: wrap;
+}
+.feature-wide{
+    display: flex;
+    flex-basis: 1200px;
+}
+.feature-wide-info{
+    display: flex;
+    flex-direction: column; 
+}
+.about-sity{
+    display: flex;
+    flex-basis: 1200px;
+    height: 330px;
+}
+.search-hotel{
+    width: 1200px;
+    height: 291px;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+}
+.page-footer {
+    display: flex;
+    flex-basis: 1200px;
+    justify-content: space-around;
+}
+.popup-search {
+   
+    box-sizing: border-box;
+    border: 1px solid #02F82B;
+}
