@@ -18,7 +18,7 @@ a {
   }
 .page-frame {
     width: 1200px;
-    margin: 0px auto;
+    margin: 0 auto;
 }
 .main-navigation {
 
@@ -133,14 +133,13 @@ a {
     font-size: 21px;    
     line-height: 26px;
     color: #ffffff;
-    display: block;
+    
 }
-.search-hotel-link{
-    width: 568px;
-    height: 86px;
+.search-hotel-link{    
     font-weight: normal;
     background-color: #766357;
     line-height: 86px;
+    margin: 0 auto;
     
 }
 .popup-search-hotels{
@@ -149,6 +148,10 @@ a {
     font-weight: bold;
     background-color: #81b3d2;
     line-height: 58px;
+}
+.page-footer {
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-top: -120px;
 }
 .hash {
     font-size: 21px;
@@ -200,17 +203,21 @@ a {
 
 .filter{
     width: 1200px;
-    /*height: 217px;*/
+    height: 217px;
     background: #90bed8;
     background-size: cover;
     background-image: url( "../img/filter_background.jpg" );
 }
+.additional-criteria-sort {
+    border: none;
+}
+
 .additional-criteria-caption,
 .price-range-title {
     font-size: 16px;
     font-weight: bold;
     line-height: 21px;
-    color: #c5c5c5;/*заменить на белый*/
+    color: #ffffff;
 }
 .filter label,
 .price-controls,
@@ -218,7 +225,7 @@ a {
     font-size: 14px;
     font-weight: normal;
     line-height: 21px;
-    color: #c5c5c5;/*заменить на белый*/
+    color: #ffffff;
 }
 .sort{
     font-size: 12px;

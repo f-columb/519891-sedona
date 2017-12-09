@@ -7,19 +7,11 @@
     height: 56px;
     padding-left: 72px;
     padding-right: 72px;
-    margin: 0px;
-    box-sizing: border-box;
-    border: 1px solid #FF0000;
+    margin: 0;    
 }
 .site-navigation li {
-    flex-basis: 240px;    
-    box-sizing: border-box;
-    border: 1px solid #000000;
+    flex-basis: 240px;
 }
-
-/*.site-navigation li:not(:last-child){
-    margin-right: 32px;  
-}*/
 .site-navigation li:nth-child(2){
     margin-right: 96px;
 }
@@ -35,7 +27,7 @@
     display: block;
     z-index: 2;
     position: absolute;
-    margin: 0px 531px;
+    margin: 0 531px;
 }
 /*Преимущества Седоны*/
 
@@ -49,17 +41,13 @@
 .about-sity-caption,
 .about-sity-description,
 .feature-item {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
 }
 .introduce {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-basis: auto;
     width: 600px;
-    height: 216px;
-    margin-left: 300px;
+    min-height: 216px;
+    margin: 0 auto;
 }
 .introduce-caption {
     margin-top: 61px;
@@ -83,19 +71,43 @@
     flex-basis: 1200px;
     height: 330px;
 }
-.search-hotel{
-    width: 1200px;
-    height: 291px;
-    box-sizing: border-box;
-    border: 1px solid #000000;
-}
 .page-footer {
     display: flex;
-    flex-basis: 1200px;
     justify-content: space-around;
 }
-.popup-search {
-   
+/*Hotels*/
+.filter{
+    display: flex;
+    flex-basis: 1200px;
+}
+.additional-criteria {
+    display: flex;     
+}
+.search-total{
+    display: flex;
+    height: 87px;
     box-sizing: border-box;
-    border: 1px solid #02F82B;
+    border-bottom: 1px solid #e5e5e5;
+    
+}
+.search-total h3,
+.search-total p,
+.search-total ul {
+    padding: 0px;
+    margin: 0px;
+}
+.sorting-method {
+    display: flex;
+    justify-content: space-between;
+}
+.search-resalt-list,
+.search-resalt-list h3,
+.search-resalt-list .stars {
+    padding: 0px;
+    margin: 0px;
+}
+.search-resalt-item {
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
 }
